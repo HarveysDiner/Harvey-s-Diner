@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvey's Diner®: Burgers, Fries & More. Quality Ingredients.</title>
+    
+    <!-- Favicon using image URL (Make sure the image is smaller and proper format) -->
+    <link rel="icon" type="image/png" href="https://sigmawire.net/i/03/I01KRW.png">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Loading screen styles */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #c24242;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 0.5s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar img {
+            height: 50px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* Style for the Order Now buttons */
+        .order-btn {
+            background: #c24242; /* Red color */
+            padding: 10px 20px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px; /* Optional: rounded corners */
+            transition: background-color 0.3s ease; /* Smooth hover effect */
+        }
+
+        .order-btn:hover {
+            background-color: #9a2a2a; /* Slightly darker red on hover */
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+        .text-content {
+            max-width: 500px;
+        }
+        .text-content h1 {
+            font-size: 28px;
+        }
+        .text-content p {
+            font-size: 16px;
+            color: gray;
+        }
+        .promo-img {
+            max-width: 500px;
+        }
+        .promo-img img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loader"></div>
+    </div>
+    
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(() => {
+                document.getElementById("loading-screen").style.display = "none";
+            }, 300); // Fast loading time
+        });
+    </script>
+    
+    <!-- Navbar -->
+    <div class="navbar">
+        <img src="https://pbs.twimg.com/profile_images/1647290949221974016/xjq7czxj_400x400.jpg" alt="Harvey's Diner Logo">
+        <div class="nav-links">
+            <a href="menu.html">Menu</a>
+            <a href="rewards.html">Rewards</a>
+            <a href="deals.html">Deals</a>
+            <a href="giftcards.html">Gift Cards</a>
+            <a href="jobs.html">Careers</a>
+        </div>
+        <button class="order-btn" onclick="window.open('menu.html', '_blank')">Order Now</button>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main">
+        <div class="text-content">
+            <h1>The New HOT & SPICY BBQ WINGS® 😎</h1>
+            <p>You know you’ve made it when you take that first bite. Crispy, bold, and unapologetically spicy—our Hot & Spicy BBQ Wings bring the heat and the flavor. Game changed.</p>
+            <button class="order-btn" onclick="window.open('menu.html', '_blank')">Order Now</button>
+        </div>
+        <div class="promo-img">
+            <img src="https://sigmawire.net/i/03/leLkp5.png" alt="Promo Image">
+        </div>
+    </div>
+</body>
+</html>

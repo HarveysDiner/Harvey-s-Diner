@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvey's Diner® - Menu - Order Online for Pick Up or Delivery │ Harvey's Diner</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .top-header {
+            background: #fff;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .logo {
+            height: 40px;
+            position: absolute;
+            left: 20px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .nav-links a:hover {
+            color: #d62300;
+        }
+        .header {
+            background: #d62300;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 70px;
+        }
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+        .sidebar {
+            width: 250px;
+            background: white;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+        .sidebar h2 {
+            color: #d62300;
+            margin-bottom: 15px;
+        }
+        .sidebar p {
+            margin: 10px 0;
+            font-size: 16px;
+            cursor: pointer;
+            color: #333;
+        }
+        .sidebar p:hover {
+            color: #d62300;
+            font-weight: bold;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .drink {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        .drink:hover {
+            transform: scale(1.05);
+        }
+        .drink img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .drink h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #d62300;
+        }
+        .drink p {
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-header">
+        <img src="https://pbs.twimg.com/profile_images/1647290949221974016/xjq7czxj_400x400.jpg" alt="Harvey's Diner Logo" class="logo">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="rewards.html">Rewards</a>
+            <a href="giftcards.html">Gift Cards</a>
+        </div>
+    </div>
+    <div class="header">Combos</div>
+    <div class="container">
+        <div class="sidebar">
+            <h2>MENU</h2>
+            <p>Drinks</p>
+            <p>Meals</p>
+            <p>Sides</p>
+            <p>Desserts</p>
+        </div>
+        <div class="content">
+            <div class="menu">
+                <div class="drink">
+                    <img src="https://digitaleat.kfc.com/menus/image/bare/kfc-Pepsi.webp?q=75" alt="Pepsi">
+                    <h3>Pepsi</h3>
+                    <p>$1.99</p>
+                </div>
+                <div class="drink">
+                    <img src="https://digitaleat.kfc.com/menus/image/bare/kfc-PepsiZero.webp?q=75" alt="Mountain Dew">
+                    <h3>Pepsi Zero Sugar</h3>
+                    <p>$1.99</p>
+                </div>
+                <div class="drink">
+                    <img src="https://digitaleat.kfc.com/menus/image/bare/kfc-bottledWater.webp?q=75" alt="Water">
+                    <h3>Water</h3>
+                    <p>$1.79</p>
+                </div>
+                <div class="drink">
+                    <img src="https://digitaleat.kfc.com/menus/image/bare/kfc-mtndew.webp?q=75" alt="Pepsi Zero">
+                    <h3>Mountain Dew</h3>
+                    <p>$2.49</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
